@@ -1,0 +1,233 @@
+:root {
+    --logo: calc(50% - 75px);
+}
+@font-face {
+    font-family: "Algerian";
+    src: url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.eot");
+    src: url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c144af7d488f9069913d40dee3cd1f70.svg#Algerian")format("svg");
+
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.sectionOne {
+    background-color: #f2f2f2;
+    width: 50%;
+    padding: 2.5vh;
+}
+
+.preview {
+    width: 50%;
+ 
+    justify-content: center;
+}
+
+.previewContainer {
+    width: 90%;
+    margin: 5%;
+   
+    text-align: center;
+    /* Border image CSS */
+    border: 12px solid transparent;
+    padding: 0px;
+    /* border-image: url(logo.jpeg) 10 round; */
+}
+
+.detaisoftest{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #0A758f;
+
+}
+.subcolor{
+color: #59981A;
+font-weight: bold;
+}
+.assigndesign{
+    color: #05445E;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#form_AssignmentTopic{
+    color: #189AB4;
+    font-size: 26px;
+}
+.previewMidSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    margin: 60px 0px 60px;
+}
+
+.previewMidSection_left {
+    text-align: center;
+    width: 45%;
+    /* background-color: rgb(88, 242, 74); */
+}
+
+.previewMidSection_right {
+    text-align: center;
+
+    width: 45%;
+    /* background-color: salmon; */
+}
+
+.previewUpperSection {
+    width: 100%;
+    margin-top: 80px;
+    /* background-color: pink; */
+
+}
+
+
+.ChangableLOGO {
+    width: 150px;
+    height: 150px;
+    /* margin-left: var(--logo); */
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+
+/* TEXT DESIGN */
+.designmain {
+    font-size: 30px;
+    color: red;
+}
+
+.design {
+    font-size: 18px;
+}
+
+.byto {
+    color: #05445E;
+    font-weight: bold;
+    font-size: 22px;
+    /* text-decoration: underline; */
+}
+
+#collegeHeading {
+    
+    color: #0c2d48;
+    font-size: 45px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Bungee Spice', sans-serif;
+font-family: 'Calistoga', serif;
+font-family: 'Chewy', system-ui;
+font-family: 'Lobster', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-weight: 1000;
+letter-spacing:.1REM;
+
+}
+
+#footercollege {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: #0c2d48;
+    font-size: 30px;
+
+}
+
+.no-print {
+    display: block;
+    /* Set the default display value */
+
+}
+
+@media (max-width: 500px) {
+    .preview {
+        width: 100%;
+    }
+
+    .papa {
+        display: block;
+    }
+
+    .forms {
+        width: 100%;
+    }
+}
+
+/* Apply styles for print only */
+@media print {
+    .no-print {
+        display: none;
+
+
+    }
+}
+
+
+@page {
+    size: auto;
+    /* auto is the initial value */
+    margin: 0;
+    /* this affects the margin in the printer settings */
+}
+
+/* @media (max-width: 500px) {
+    .section {
+        display: block;
+        width: 100%;
+    }
+
+    .section-one {
+        background-color: crimson;
+        width: 100%;
+
+    }
+
+    .finalcollege {
+
+        margin-top: -80px;
+    }
+
+    .preview {
+        width: 100%;
+        background-image: url(backgroundimg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        justify-content: center;
+    }
+
+    .section-two {
+        width: 100%;
+    }
+
+    .section-2-three {
+        width: 90%;
+        margin-left: 5%;
+        background-color: red;}
+    }
+
+
+    .sec-two-center {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+} */

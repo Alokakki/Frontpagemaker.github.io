@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-body no-print" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alok singh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="papa">
+        <form action="" class="forms">
+            <div class="section">
+
+                <div class="sectionOne no-print">
+                    <label for="collegelists" class="form-label">College</label>
+                    <select class="form-select form-select-sm collegelists " id="collegeSelector"
+                        onchange="changeCollege()" aria-label="Small select example">
+                        <option value="" selected>Open This Select Menu</option>
+                        <option value="mgkvp" > Mahatma Gandhi Kashi Vidyapith, Varanasi</option>
+                        <option value="upc">Udai Pratap Autonoumus College, Varanasi</option>
+                        <option value="hcpg">Harish Chandra Post Gradutation College, Varanasi</option>
+                        <option value="rsmt">Rajarshi School of Management and Techonogy, Varanasi</option>
+                    </select>
+
+
+
+
+                    <label for="exampleDataList" class="form-label">Session</label>
+                    <input class="form-control" list="datalistOptions" id="sessionList" oninput="updatesession()"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="2021-2022">
+                        <option value="2022-2023">
+                        <option value="2023-2024">
+                        <option value="2024-2025">
+                        <option value="2025-2026">
+
+                    </datalist>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subjectlist" oninput="updatesubject()"
+                            placeholder=" Subject ">
+                    </div>
+                    <div class=" mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Assignment-Topic</label>
+                        <input type="text" class="form-control" id="assignmentlist" oninput="updateassign()"
+                            placeholder="Research / Report ">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text">Submitted To</span>
+                        <input type="text" aria-label="First name" placeholder=" Teacher First name" id="teacherfirst"
+                            class="form-control" oninput="updateteachername()">
+                        <input type="text" aria-label="Last name" placeholder="Teacher Last name" id="teacherlast"
+                            class="form-control" oninput="updateteachername()">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teacher Designation</label>
+                        <input class="form-control" list="teacherpost" id="teacherlist" oninput="updateteacherpost()"
+                            placeholder="Type to search...">
+                        <datalist id="teacherpost">
+                            <option value="Profeser">
+                            <option value="Assisent Profeser">
+                            <option value="HOD">
+                        </datalist>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Department</label>
+                        <input type="text" class="form-control" id="teacherdepartlist" oninput="teacherdepartment()"
+                            placeholder="name@example.com">
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <span class="input-group-text">Submitted By</span>
+                        <input type="text" aria-label="First name" placeholder="First name"
+                            oninput="updatestudentname()" id="studentfirst" class="form-control">
+                        <input type="text" aria-label="Last name" placeholder="Last name" oninput="updatestudentname()"
+                            id="studentlast" class="form-control">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Semester</label>
+                        <select class="form-select form-select-sm" aria-label="Small select example" id="semesterlist"
+                            onchange="updatesemeter()">
+                            <option selected>Open this select menu</option>
+                            <option value="1">I st Semester</option>
+                            <option value="2">II nd Semester</option>
+                            <option value="3">III rd Semester</option>
+                            <option value="4">IV th Semester</option>
+                            <option value="5">V th Semester</option>
+                            <option value="6">VI th Semester</option>
+                            <value11></value11>
+                        </select>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Reg. Or Roll No. </label>
+                        <input type="text" class="form-control" id="reglist" oninput="updatereg()"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Department Of Submission</label>
+                        <input type="text" class="form-control" id="listofdop" oninput="updatedepofreg()"
+                            placeholder="name@example.com">
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="printSection()">Get PDF</button>
+                    <button type="clear" class="btn btn-dark">Clear</button>
+                </div>
+        </form>
+
+
+        <!-- Section TWO STARTS FROM HERE -->
+        <div class="preview" id="printSection">
+            <div class="previewContainer" id="printkrnewala">
+                <div class="previewUpperSection">
+                    <h1 id="collegeHeading">Mahatma Gandhi Kashi Vidyapith, Varanasi</h1>
+                    <img id="collegeImage" class="ChangableLOGO" src="logo.jpeg" alt="">
+                    <h2 class="textAlignCenter designmain">Session - <span id="form_Session">2023-2024</span></h2>
+                    <h2 class="textAlignCenter subcolor">Subject - <span id="form_subject">Ancient History</span></h2>
+                    <h2 class="textAlignCenter assigndesign">Assignment Topic</h2>
+                    <h2 class="textAlignCenter" id="form_AssignmentTopic">Freefom Struggle</h2>
+                </div>
+
+                <div class="previewMidSection">
+                    <div class="previewMidSection_left">
+                        <h4 class="byto">Submitted To :</h4>
+                        <h3 id="finalteachername" class="designmain">Teacher Name</h3>
+                        <h4 id="finalteacherpost" class="design detaisoftest">Teacher Designation</h4>
+                        <h4 id="teacherdepartmet" class="design detaisoftest">Department</h4>
+                        <h4 id="teachercollege" class="design detaisoftest">College</h4>
+                    </div>
+                    <div class="previewMidSection_right">
+                        <h4 class="byto">Submitted By :</h4>
+                        <h3 id="finalstudentname" class="designmain">Student Name</h3>
+                        <h4 id="finalclass" class="design detaisoftest">Semester</h4>
+
+                        <h4 id="reg_no" class="design detaisoftest">Reg No./ Roll no. </h4>
+                        <h4 id="dop_final" class="design detaisoftest">Department of submission</h4>
+                    </div>
+
+                </div>
+                <h4>Department Of <span id=""></span> </h4>
+                <h1 class="" id="footercollege">Mahatma Gandhi Kashi Vidyapith, Varanasi</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- <button onclick="printSection()" class="no-print">Print Section</button> -->
+
+
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
