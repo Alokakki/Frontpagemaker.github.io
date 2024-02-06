@@ -45,7 +45,7 @@
     /* Border image CSS */
     border: 12px solid transparent;
     padding: 0px;
-    /* border-image: url(logo.jpeg) 10 round; */
+    border-image: url(HD-wallpaper-plain-black-black.jpg) 10 round;
 }
 
 .detaisoftest{
@@ -57,10 +57,11 @@
 .subcolor{
 color: #59981A;
 font-weight: bold;
+font-size: 37px;
 }
 .assigndesign{
     color: #05445E;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: .1rem;
     text-decoration: underline;
@@ -68,7 +69,7 @@ font-weight: bold;
 }
 #form_AssignmentTopic{
     color: #189AB4;
-    font-size: 26px;
+    font-size: 32px;
 }
 .previewMidSection {
     display: flex;
@@ -111,7 +112,7 @@ font-weight: bold;
 
 /* TEXT DESIGN */
 .designmain {
-    font-size: 30px;
+    font-size: 40px;
     color: red;
 }
 
@@ -122,7 +123,7 @@ font-weight: bold;
 .byto {
     color: #05445E;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 30px;
     /* text-decoration: underline; */
 }
 
@@ -147,7 +148,7 @@ letter-spacing:.1REM;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
     color: #0c2d48;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
