@@ -201,7 +201,7 @@ function printSection() {
 
             if (screenWidth < 800) {
                 document.body.innerHTML = ''; // Clear the body content
-                alert('Sorry, this webpage is not supported on screens less than 800 pixels wide.');
+                alert('Sorry, this webpage is not supported on your mobile please open is Computer.');
             }
         }
 
