@@ -87,6 +87,8 @@ function updateteacherpost() {
 function teacherdepartment() {
   var teacherdepartment = document.getElementById('teacherdepartlist').value;
   document.getElementById("teacherdepartmet").textContent = teacherdepartment;
+  document.getElementById("Depchnges").textContent = teacherdepartment;
+
 
 }
 
@@ -171,7 +173,7 @@ function printSection() {
   // Print the page
   var printSec = document.getElementById("printkrnewala");
   printSec.style.width = '95vw';
-  printSec.style.height = '104%';
+  printSec.style.height = '97%';
   
   var collegename = document.getElementById("collegeHeading");
   collegename.style.fontSize = '50px';
@@ -185,3 +187,21 @@ function printSection() {
     location.reload();
   }, 10);
 }
+
+
+
+
+        window.onload = function() {
+            checkScreenWidth();
+            window.addEventListener('resize', checkScreenWidth);
+        };
+
+        function checkScreenWidth() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth < 800) {
+                document.body.innerHTML = ''; // Clear the body content
+                alert('Sorry, this webpage is not supported on screens less than 800 pixels wide.');
+            }
+        }
+
